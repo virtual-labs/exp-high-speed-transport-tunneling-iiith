@@ -1,9 +1,9 @@
 
-# **5 High-Speed Devices: Drift/Diffusion, Tunnel Diodes, and IMPATT Diodes**
+# **High-Speed Devices: Drift/Diffusion, Tunnel Diodes, and IMPATT Diodes**
 
 ---
 
-## **5.1 Introduction**
+## **Introduction**
 
 High-speed semiconductor devices operate on **time scales** where
 **carrier transit dynamics** become the primary limiting factor. Two
@@ -25,27 +25,27 @@ tunneling barrier, and IMPATT diode structure here]**
 
 ---
 
-## **5.2 Drift/Diffusion Transit Time**
+## **Drift/Diffusion Transit Time**
 
 For a **uniformly doped semiconductor slab** of length **L** subjected
 to an electric field **E**, the **carrier drift velocity** is:
 
-$$ v_d = \mu E \tag{5.1} $$
+$$ v_d = \mu E \tag{1} $$
 
 where **μ** is the carrier mobility.  
 At **high fields**, velocity saturates at **$v_{sat}$**, giving:
 
-$$ v_d = \frac{\mu E}{1 + \dfrac{\mu E}{v_{sat}}} \tag{5.2} $$
+$$ v_d = \frac{\mu E}{1 + \dfrac{\mu E}{v_{sat}}} \tag{2} $$
 
 The **mean drift transit time** is then:
 
-$$ \tau_{dd} = \frac{L}{v_d} \tag{5.3} $$
+$$ \tau_{dd} = \frac{L}{v_d} \tag{3} $$
 
 > **[Insert graph of $v_d$ vs. $E$ showing linear region and velocity saturation]**
 
 ---
 
-## **5.3 Quantum Tunneling Transit Time**
+## **Quantum Tunneling Transit Time**
 
 For a **barrier** of width **W** and height **$U_0$**, the **WKB
 approximation** gives the **transmission probability**:
@@ -53,14 +53,14 @@ approximation** gives the **transmission probability**:
 $$
 T(E) \approx \exp \left(
 -\dfrac{2}{\hbar} \int_0^W \sqrt{2m^*(U(x) - E)} \, dx
-\right) \tag{5.4}
+\right) \tag{4}
 $$
 
 where **$m^*$** is the **effective mass** and **E** the carrier energy.
 
 The **effective tunneling transit time** is often estimated as:
 
-$$ \tau_{tun} \approx \dfrac{\hbar}{\Delta E} \tag{5.5} $$
+$$ \tau_{tun} \approx \dfrac{\hbar}{\Delta E} \tag{5} $$
 
 where **ΔE** is the **energy uncertainty** associated with the tunneling
 process.
@@ -69,7 +69,7 @@ process.
 
 ---
 
-## **5.4 Esaki (Tunnel) Diode Theory**
+## **Esaki (Tunnel) Diode Theory**
 
 A **tunnel diode** consists of a **heavily doped p⁺n⁺ junction** with a
 **depletion width ≈ 10 nm**.  
@@ -85,7 +85,7 @@ Its **I--V characteristic** is dominated by **interband tunneling**:
 
 The **Peak-to-Valley Current Ratio (PVCR)** is:
 
-$$ PVCR = \dfrac{I_P}{I_V} \tag{5.6} $$
+$$ PVCR = \dfrac{I_P}{I_V} \tag{6} $$
 
 where **$I_P$** is the **peak current** and **$I_V$** the **valley current**.
 
@@ -94,7 +94,7 @@ where **$I_P$** is the **peak current** and **$I_V$** the **valley current**.
 
 ---
 
-## **5.5 IMPATT Diode Theory**
+## **IMPATT Diode Theory**
 
 An **IMPATT** (**Impact Avalanche Transit-Time**) diode combines two
 regions:
@@ -108,15 +108,15 @@ The **avalanche buildup time ($\tau_a$)** and
 **drift time ($\tau_d$)** together set the
 **oscillation frequency**:
 
-$$ f_{osc} \approx \dfrac{1}{\tau_a + \tau_d} \tag{5.7} $$
+$$ f_{osc} \approx \dfrac{1}{\tau_a + \tau_d} \tag{7} $$
 
 where drift time is given by:
 
-$$ \tau_d = \dfrac{L_d}{v_{sat}} \tag{5.8} $$
+$$ \tau_d = \dfrac{L_d}{v_{sat}} \tag{8} $$
 
 The **output RF power** is given by:
 
-$$ P_{out} \approx \dfrac{1}{2} \, V_{RF} I_{RF} \, \eta_c \tag{5.9} $$
+$$ P_{out} \approx \dfrac{1}{2} \, V_{RF} I_{RF} \, \eta_c \tag{9} $$
 
 where **$\eta_c$** is the **circuit efficiency**.
 
@@ -125,15 +125,15 @@ where **$\eta_c$** is the **circuit efficiency**.
 
 ---
 
-## **5.6 Summary of Key Equations**
+## **Summary of Key Equations**
 
 | **Equation** | **Expression** | **Description** |
 |-------------|----------------|------------------|
-| (5.10) | $v_d = \dfrac{\mu E}{1 + \mu E / v_{sat}}$ | Drift velocity |
-| (5.11) | $\tau_{dd} = \dfrac{L}{v_d}$ | Drift/diffusion transit time |
-| (5.12) | $T(E) \approx \exp \left( -\dfrac{2}{\hbar} \int_0^W \sqrt{2m^*(U(x)-E)} \, dx \right)$ | Tunneling probability |
-| (5.13) | $PVCR = \dfrac{I_P}{I_V}$ | Peak-to-valley current ratio |
-| (5.14) | $f_{osc} \approx \dfrac{1}{\tau_a + \tau_d}$ | IMPATT oscillation frequency |
+| (1) | $v_d = \dfrac{\mu E}{1 + \mu E / v_{sat}}$ | Drift velocity |
+| (2) | $\tau_{dd} = \dfrac{L}{v_d}$ | Drift/diffusion transit time |
+| (3) | $T(E) \approx \exp \left( -\dfrac{2}{\hbar} \int_0^W \sqrt{2m^*(U(x)-E)} \, dx \right)$ | Tunneling probability |
+| (4) | $PVCR = \dfrac{I_P}{I_V}$ | Peak-to-valley current ratio |
+| (5) | $f_{osc} \approx \dfrac{1}{\tau_a + \tau_d}$ | IMPATT oscillation frequency |
 
 These relationships form the **theoretical basis** for analyzing:
 
@@ -143,7 +143,7 @@ These relationships form the **theoretical basis** for analyzing:
 
 ---
 
-## **5.7 Suggested References**
+## **Suggested References**
 
 1.  **B. G. Streetman** and **S. Banerjee**, *Solid State Electronic Devices*
 2.  **S. M. Sze** and **K. K. Ng**, *Physics of Semiconductor Devices*
