@@ -2,38 +2,157 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. In high-speed carrier transport, which factor primarily limits the drift velocity of carriers in a semiconductor?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Carrier recombination",
+        "b": "Velocity saturation due to scattering",
+        "c": "Tunneling probability",
+        "d": "Avalanche breakdown"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Carrier recombination affects lifetime, not drift velocity saturation.",
+        "b": "Correct. At high electric fields, scattering with phonons and impurities causes carriers to reach a maximum velocity, called velocity saturation.",
+        "c": "Incorrect. Tunneling occurs in quantum devices, not in normal drift transport.",
+        "d": "Incorrect. Avalanche breakdown is related to impact ionization, not drift velocity."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "2. What is the main quantum phenomenon enabling ultrafast operation in tunnel diodes?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Impact ionization",
+        "b": "Thermal diffusion",
+        "c": "Quantum mechanical tunneling",
+        "d": "Drift velocity enhancement"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect. Impact ionization dominates in IMPATT diodes, not tunnel diodes.",
+        "b": "Incorrect. Thermal diffusion is unrelated to high-speed tunneling.",
+        "c": "Correct. In heavily doped Esaki diodes, electrons tunnel through a narrow depletion barrier under forward bias.",
+        "d": "Incorrect. Drift velocity enhancement occurs in non-quantum regimes."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "3. Which device uses avalanche multiplication followed by transit-time delay to generate microwave oscillations?",
+      "answers": {
+        "a": "Esaki diode",
+        "b": "IMPATT diode",
+        "c": "Schottky diode",
+        "d": "Varactor diode"
+      },
+      "explanations": {
+        "a": "Incorrect. Esaki diodes exploit tunneling, not avalanche multiplication.",
+        "b": "Correct. IMPATT diodes use avalanche breakdown and transit delay to produce RF and microwave oscillations.",
+        "c": "Incorrect. Schottky diodes are fast but not avalanche-based oscillators.",
+        "d": "Incorrect. Varactor diodes use voltage-controlled capacitance, not avalanche effects."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. If the transit time of carriers under drift-diffusion is τ_dd and under tunneling is τ_tun, what is typically true?",
+      "answers": {
+        "a": "τ_tun ≫ τ_dd",
+        "b": "τ_tun ≪ τ_dd",
+        "c": "τ_tun = τ_dd",
+        "d": "τ_tun depends only on recombination lifetime"
+      },
+      "explanations": {
+        "a": "Incorrect. Tunneling is much faster, so τ_tun cannot be greater than τ_dd.",
+        "b": "Correct. Tunneling bypasses classical scattering, resulting in sub-picosecond transit times, much faster than drift-diffusion.",
+        "c": "Incorrect. Drift transport is inherently slower.",
+        "d": "Incorrect. Tunneling depends on barrier width and energy, not recombination."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. The peak-to-valley current ratio (PVCR) in a tunnel diode characterizes:",
+      "answers": {
+        "a": "Efficiency of avalanche multiplication",
+        "b": "Magnitude of negative-resistance effect",
+        "c": "Breakdown voltage stability",
+        "d": "Carrier lifetime under forward bias"
+      },
+      "explanations": {
+        "a": "Incorrect. PVCR is unrelated to avalanche multiplication; that's for IMPATT diodes.",
+        "b": "Correct. A higher PVCR means a stronger negative-resistance region, allowing better high-speed switching.",
+        "c": "Incorrect. Breakdown voltage is relevant for reverse-biased devices, not tunnel diodes.",
+        "d": "Incorrect. PVCR is not related to recombination lifetime."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. In an IMPATT diode, if the transit time τ_transit decreases, the oscillation frequency f_osc will:",
+      "answers": {
+        "a": "Decrease proportionally",
+        "b": "Increase proportionally",
+        "c": "Remain constant",
+        "d": "Drop to zero"
+      },
+      "explanations": {
+        "a": "Incorrect. Shorter transit times mean higher oscillation frequencies.",
+        "b": "Correct. f_osc = 1 / τ_transit, so reducing τ_transit increases f_osc.",
+        "c": "Incorrect. Frequency cannot remain constant if transit time changes.",
+        "d": "Incorrect. Oscillation frequency does not become zero unless biasing is removed."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. For a tunnel barrier of width W = 10 nm, the transmission probability T roughly follows:",
+      "answers": {
+        "a": "T ∝ e^(-W)",
+        "b": "T ∝ W²",
+        "c": "T ∝ 1/W",
+        "d": "T is independent of W"
+      },
+      "explanations": {
+        "a": "Correct. Quantum tunneling probability decreases exponentially with barrier width: T ≈ exp(-2κW).",
+        "b": "Incorrect. It's not a quadratic dependence.",
+        "c": "Incorrect. The dependence is exponential, not linear inverse.",
+        "d": "Incorrect. Barrier width strongly affects tunneling."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. At very high electric fields (>10^5 V/cm), carrier velocity in semiconductors tends to:",
+      "answers": {
+        "a": "Increase linearly without limit",
+        "b": "Saturate at a constant value",
+        "c": "Drop to zero due to recombination",
+        "d": "Become infinite due to tunneling"
+      },
+      "explanations": {
+        "a": "Incorrect. Linear increase happens only at low fields.",
+        "b": "Correct. Velocity saturation occurs due to frequent carrier scattering at very high fields.",
+        "c": "Incorrect. Recombination doesn't drive velocity to zero.",
+        "d": "Incorrect. Tunneling does not imply infinite velocity."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. In an Esaki diode, negative resistance appears because:",
+      "answers": {
+        "a": "Avalanche carrier multiplication dominates",
+        "b": "Electrons tunnel between overlapping conduction and valence bands",
+        "c": "Carrier lifetime is extremely short",
+        "d": "Junction temperature decreases sharply"
+      },
+      "explanations": {
+        "a": "Incorrect. Avalanche effects are for IMPATT diodes, not Esaki diodes.",
+        "b": "Correct. In Esaki diodes, heavy doping causes band overlap, allowing electrons to tunnel directly and create negative resistance.",
+        "c": "Incorrect. Carrier lifetime is unrelated to negative resistance.",
+        "d": "Incorrect. Junction temperature does not cause negative resistance."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     }
   ]
 }

@@ -1,0 +1,108 @@
+<!-- Challenges Tab -->
+<div id="challenges" class="tab-content">
+    <div class="challenge-container">
+        <div class="challenge-stats">
+            <div class="stat-item">
+                <div class="stat-value" id="totalScoreValue">0</div>
+                <div class="stat-label">Total Score</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="challengesCompletedValue">0/4</div>
+                <div class="stat-label">Challenges Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="hintsUsedValue">0</div>
+                <div class="stat-label">Hints Used</div>
+            </div>
+        </div>
+
+        <div class="challenge-progress">
+            <div class="challenge-progress-bar" id="totalProgressBar" style="width: 0%;"></div>
+        </div>
+
+        <!-- Challenge 1: Basic MCQs -->
+        <div class="challenge-section" id="challenge1">
+            <div class="challenge-header">
+                <div class="challenge-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3 class="challenge-title">Quantum Tunneling Fundamentals</h3>
+            </div>
+            <p class="challenge-description">Test your understanding of quantum tunneling concepts with these multiple-choice questions.</p>
+            
+            <div id="challenge1-content"></div>
+            
+            <div class="challenge-controls">
+                <button class="challenge-btn challenge-btn-primary" onclick="checkQuizAnswers(1)">Submit Answers</button>
+                <button class="challenge-btn challenge-btn-secondary" onclick="showQuizHints(1)">Hint</button>
+                <button class="challenge-btn challenge-btn-secondary" onclick="resetChallenge(1)">Reset</button>
+            </div>
+            <div class="challenge-feedback" id="challenge1-feedback"></div>
+        </div>
+
+        <!-- Challenge 2: Advanced Concepts -->
+        <div class="challenge-section" id="challenge2">
+            <div class="challenge-header">
+                <div class="challenge-icon">
+                    <i class="fas fa-atom"></i>
+                </div>
+                <h3 class="challenge-title">Advanced Semiconductor Transport</h3>
+            </div>
+            <p class="challenge-description">Demonstrate your advanced understanding of carrier transport mechanisms in semiconductor devices.</p>
+            
+            <div id="challenge2-content"></div>
+            
+            <div class="challenge-controls">
+                <button class="challenge-btn challenge-btn-primary" onclick="checkAdvancedAnswers()">Submit Answers</button>
+                <button class="challenge-btn challenge-btn-secondary" onclick="showAdvancedHints()">Hint</button>
+                <button class="challenge-btn challenge-btn-secondary" onclick="resetChallenge(2)">Reset</button>
+            </div>
+            <div class="challenge-feedback" id="challenge2-feedback"></div>
+        </div>
+
+        <!-- Challenge 3: Fill in the Blanks -->
+        <div class="challenge-section" id="challenge3">
+            <div class="challenge-header">
+                <div class="challenge-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h3 class="challenge-title">Complete the Concepts</h3>
+            </div>
+            <p class="challenge-description">Fill in the missing terms in these semiconductor device statements.</p>
+            
+            <div id="challenge3-content"></div>
+            
+            <div class="challenge-controls">
+                <button class="challenge-btn challenge-btn-primary" onclick="checkFillBlanks()">Submit Answers</button>
+                <button class="challenge-btn challenge-btn-secondary" onclick="showFillBlanksHint()">Hint</button>
+                <button class="challenge-btn challenge-btn-secondary" onclick="resetChallenge(3)">Reset</button>
+            </div>
+            <div class="challenge-feedback" id="challenge3-feedback"></div>
+        </div>
+
+        <!-- Challenge 4: Numerical Problems -->
+        <div class="challenge-section" id="challenge4">
+            <div class="challenge-header">
+                <div class="challenge-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
+                <h3 class="challenge-title">Quantum Device Calculations</h3>
+            </div>
+            <p class="challenge-description">Solve these numerical problems related to semiconductor device physics.</p>
+            
+            <div id="challenge4-content"></div>
+            
+            <div class="challenge-controls">
+                <button class="challenge-btn challenge-btn-primary" onclick="checkCalculations()">Submit Answers</button>
+                <button class="challenge-btn challenge-btn-secondary" onclick="showCalculationHint()">Hint</button>
+                <button class="challenge-btn challenge-btn-secondary" onclick="resetChallenge(4)">Reset</button>
+            </div>
+            <div class="challenge-feedback" id="challenge4-feedback"></div>
+        </div>
+
+        <!-- Reset All Challenges Button -->
+        <div style="text-align: center; margin-top: 30px;">
+            <button class="btn btn-danger" onclick="resetAllChallenges()">Reset All Challenges</button>
+        </div>
+    </div>
+</div>
