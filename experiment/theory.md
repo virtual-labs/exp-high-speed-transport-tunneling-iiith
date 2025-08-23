@@ -1,6 +1,7 @@
+
 # **5 High-Speed Devices: Drift/Diffusion, Tunnel Diodes, and IMPATT Diodes**
 
-------------------------------------------------------------------------
+---
 
 ## **5.1 Introduction**
 
@@ -19,87 +20,79 @@ exploit tunneling to achieve **negative differential resistance**, while
 **IMPATT diodes** use **avalanche multiplication** combined with
 **drift-region delay** to generate **microwave oscillations**.
 
-> **\[Insert schematic diagram comparing drift/diffusion region,
-> tunneling barrier, and IMPATT diode structure here\]**
+> **[Insert schematic diagram comparing drift/diffusion region,
+tunneling barrier, and IMPATT diode structure here]**
 
-------------------------------------------------------------------------
+---
 
 ## **5.2 Drift/Diffusion Transit Time**
 
 For a **uniformly doped semiconductor slab** of length **L** subjected
 to an electric field **E**, the **carrier drift velocity** is:
 
-\[ v_d = `\mu `{=tex}E `\tag{5.1}`{=tex} \]
+$$ v_d = \mu E \tag{5.1} $$
 
-where **μ** is the carrier mobility.\
-At **high fields**, velocity saturates at
-**v`<sub>`{=html}sat`</sub>`{=html}**, giving:
+where **μ** is the carrier mobility.  
+At **high fields**, velocity saturates at **$v_{sat}$**, giving:
 
-\[ v_d = `\frac{\mu E}{1 + \dfrac{\mu E}{v_{sat}}}`{=tex}
-`\tag{5.2}`{=tex} \]
+$$ v_d = \frac{\mu E}{1 + \dfrac{\mu E}{v_{sat}}} \tag{5.2} $$
 
 The **mean drift transit time** is then:
 
-\[ `\tau`{=tex}\_{dd} = `\frac{L}{v_d}`{=tex} `\tag{5.3}`{=tex} \]
+$$ \tau_{dd} = \frac{L}{v_d} \tag{5.3} $$
 
-> **\[Insert graph of v`<sub>`{=html}d`</sub>`{=html} vs. E showing
-> linear region and velocity saturation\]**
+> **[Insert graph of $v_d$ vs. $E$ showing linear region and velocity saturation]**
 
-------------------------------------------------------------------------
+---
 
 ## **5.3 Quantum Tunneling Transit Time**
 
-For a **barrier** of width **W** and height **U₀**, the **WKB
+For a **barrier** of width **W** and height **$U_0$**, the **WKB
 approximation** gives the **transmission probability**:
 
-\[ T(E) `\approx `{=tex}`\exp `{=tex}`\left`{=tex}(
--`\dfrac{2}{\hbar}`{=tex} `\int`{=tex}\_0\^W
-`\sqrt{2m^*(U(x) - E)}`{=tex} , dx `\right`{=tex}) `\tag{5.4}`{=tex} \]
+$$
+T(E) \approx \exp \left(
+-\dfrac{2}{\hbar} \int_0^W \sqrt{2m^*(U(x) - E)} \, dx
+\right) \tag{5.4}
+$$
 
-where **m\*** is the **effective mass** and **E** the carrier energy.
+where **$m^*$** is the **effective mass** and **E** the carrier energy.
 
 The **effective tunneling transit time** is often estimated as:
 
-\[ `\tau`{=tex}\_{tun} `\approx `{=tex}`\dfrac{\hbar}{\Delta E}`{=tex}
-`\tag{5.5}`{=tex} \]
+$$ \tau_{tun} \approx \dfrac{\hbar}{\Delta E} \tag{5.5} $$
 
 where **ΔE** is the **energy uncertainty** associated with the tunneling
 process.
 
-> **\[Insert energy band diagram of tunneling barrier with incident and
-> transmitted wavefunctions\]**
+> **[Insert energy band diagram of tunneling barrier with incident and transmitted wavefunctions]**
 
-------------------------------------------------------------------------
+---
 
 ## **5.4 Esaki (Tunnel) Diode Theory**
 
 A **tunnel diode** consists of a **heavily doped p⁺n⁺ junction** with a
-**depletion width ≈ 10 nm**.\
+**depletion width ≈ 10 nm**.  
 Its **I--V characteristic** is dominated by **interband tunneling**:
 
 1.  **Low forward bias** → Filled conduction-band states on the
     **n-side** align with empty valence-band states on the **p-side**,
     enabling **tunneling** and producing a **current peak** at
-    **V`<sub>`{=html}P`</sub>`{=html}**.
+    **$V_P$**.
 2.  **Moderate bias** → The overlap decreases, reducing current
     (**negative resistance region**).
 3.  **High bias** → Normal diffusion current dominates again.
 
 The **Peak-to-Valley Current Ratio (PVCR)** is:
 
-\[ PVCR = `\dfrac{I_P}{I_V}`{=tex} `\tag{5.6}`{=tex} \]
+$$ PVCR = \dfrac{I_P}{I_V} \tag{5.6} $$
 
-where **I`<sub>`{=html}P`</sub>`{=html}** is the **peak current** and
-**I`<sub>`{=html}V`</sub>`{=html}** the **valley current**.
+where **$I_P$** is the **peak current** and **$I_V$** the **valley current**.
 
-> **\[Insert I--V characteristic of tunnel diode with
-> V`<sub>`{=html}P`</sub>`{=html}, V`<sub>`{=html}V`</sub>`{=html}, and
-> negative-resistance region highlighted\]**\
-> **\[Insert band diagrams for V \< V`<sub>`{=html}P`</sub>`{=html}, V =
-> V`<sub>`{=html}P`</sub>`{=html}, and V \>
-> V`<sub>`{=html}V`</sub>`{=html} showing overlap changes\]**
+> **[Insert I--V characteristic of tunnel diode with $V_P$, $V_V$, and negative-resistance region highlighted]**  
+> **[Insert band diagrams for $V < V_P$, $V = V_P$, and $V > V_V$ showing overlap changes]**
 
-------------------------------------------------------------------------
+---
 
 ## **5.5 IMPATT Diode Theory**
 
@@ -108,54 +101,39 @@ regions:
 
 -   **Avalanche Region** → Reverse-biased beyond **breakdown**; carriers
     undergo **impact ionization** with multiplication factor **M**.
--   **Drift Region** → Carriers traverse at **near
-    v`<sub>`{=html}sat`</sub>`{=html}**, introducing a **phase delay**
+-   **Drift Region** → Carriers traverse at **near $v_{sat}$**, introducing a **phase delay**
     between **voltage** and **current**.
 
-The **avalanche buildup time (τ`<sub>`{=html}a`</sub>`{=html})** and
-**drift time (τ`<sub>`{=html}d`</sub>`{=html})** together set the
+The **avalanche buildup time ($\tau_a$)** and
+**drift time ($\tau_d$)** together set the
 **oscillation frequency**:
 
-\[ f\_{osc} `\approx `{=tex}`\dfrac{1}{\tau_a + \tau_d}`{=tex}
-`\tag{5.7}`{=tex} \]
+$$ f_{osc} \approx \dfrac{1}{\tau_a + \tau_d} \tag{5.7} $$
 
 where drift time is given by:
 
-\[ `\tau`{=tex}\_d = `\dfrac{L_d}{v_{sat}}`{=tex} `\tag{5.8}`{=tex} \]
+$$ \tau_d = \dfrac{L_d}{v_{sat}} \tag{5.8} $$
 
 The **output RF power** is given by:
 
-\[ P\_{out} `\approx `{=tex}`\dfrac{1}{2}`{=tex} V\_{RF} I\_{RF}
-`\eta`{=tex}\_c `\tag{5.9}`{=tex} \]
+$$ P_{out} \approx \dfrac{1}{2} \, V_{RF} I_{RF} \, \eta_c \tag{5.9} $$
 
-where **η`<sub>`{=html}c`</sub>`{=html}** is the **circuit efficiency**.
+where **$\eta_c$** is the **circuit efficiency**.
 
-> **\[Insert schematic of avalanche and drift regions with field profile
-> and carrier motion over one RF cycle\]**\
-> **\[Insert graph of RF voltage and current waveforms showing phase
-> shift due to transit time\]**
+> **[Insert schematic of avalanche and drift regions with field profile and carrier motion over one RF cycle]**  
+> **[Insert graph of RF voltage and current waveforms showing phase shift due to transit time]**
 
-------------------------------------------------------------------------
+---
 
 ## **5.6 Summary of Key Equations**
 
-  ---------------------------------------------------------------------------------------------------------------------
-  **Equation**       **Expression**                                                        **Description**
-  ------------------ --------------------------------------------------------------------- ----------------------------
-  (5.10)             (`\displaystyle `{=tex}v_d =                                          Drift velocity
-                     `\frac{\mu E}{1 + \mu E / v_{sat}}`{=tex})                            
-
-  (5.11)             (`\displaystyle `{=tex}`\tau`{=tex}\_{dd} = `\frac{L}{v_d}`{=tex})    Drift/diffusion transit time
-
-  (5.12)             (`\displaystyle `{=tex}T(E)                                           Tunneling probability
-                     `\approx `{=tex}`\exp`{=tex}`\left`{=tex}(-`\dfrac{2}{\hbar}`{=tex}   
-                     `\int`{=tex}\_0\^W `\sqrt{2m^*(U(x)-E)}`{=tex} , dx `\right`{=tex}))  
-
-  (5.13)             (`\displaystyle `{=tex}PVCR = `\dfrac{I_P}{I_V}`{=tex})               Peak-to-valley current ratio
-
-  (5.14)             (`\displaystyle `{=tex}f\_{osc}                                       IMPATT oscillation frequency
-                     `\approx `{=tex}`\dfrac{1}{\tau_a + \tau_d}`{=tex})                   
-  ---------------------------------------------------------------------------------------------------------------------
+| **Equation** | **Expression** | **Description** |
+|-------------|----------------|------------------|
+| (5.10) | $v_d = \dfrac{\mu E}{1 + \mu E / v_{sat}}$ | Drift velocity |
+| (5.11) | $\tau_{dd} = \dfrac{L}{v_d}$ | Drift/diffusion transit time |
+| (5.12) | $T(E) \approx \exp \left( -\dfrac{2}{\hbar} \int_0^W \sqrt{2m^*(U(x)-E)} \, dx \right)$ | Tunneling probability |
+| (5.13) | $PVCR = \dfrac{I_P}{I_V}$ | Peak-to-valley current ratio |
+| (5.14) | $f_{osc} \approx \dfrac{1}{\tau_a + \tau_d}$ | IMPATT oscillation frequency |
 
 These relationships form the **theoretical basis** for analyzing:
 
@@ -163,12 +141,10 @@ These relationships form the **theoretical basis** for analyzing:
 -   **Negative-resistance switching**
 -   **Microwave generation** in **advanced semiconductor devices**.
 
-------------------------------------------------------------------------
+---
 
 ## **5.7 Suggested References**
 
-1.  **B. G. Streetman** and **S. Banerjee**, *Solid State Electronic
-    Devices*
+1.  **B. G. Streetman** and **S. Banerjee**, *Solid State Electronic Devices*
 2.  **S. M. Sze** and **K. K. Ng**, *Physics of Semiconductor Devices*
-3.  **T. Gonzalez** and **J. Mateos**, *High-Speed Semiconductor
-    Devices*
+3.  **T. Gonzalez** and **J. Mateos**, *High-Speed Semiconductor Devices*
