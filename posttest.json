@@ -1,0 +1,158 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "1. If the measured drift transit time τ_dd = 50 ps and the tunneling transit time τ_tun = 0.5 ps, what is the approximate speedup factor of tunneling?",
+      "answers": {
+        "a": "10x",
+        "b": "50x",
+        "c": "100x",
+        "d": "0.01x"
+      },
+      "explanations": {
+        "a": "Incorrect. 50 ps / 0.5 ps = 100x, not 10x.",
+        "b": "Incorrect. It's faster than 50x.",
+        "c": "Correct. Tunneling is about 100 times faster than drift transport here.",
+        "d": "Incorrect. Tunneling is not slower; it's faster."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. In the Esaki diode I–V curve, the valley voltage V_V was measured at 0.35 V and the peak voltage V_P at 0.15 V. What does this indicate?",
+      "answers": {
+        "a": "A large negative-resistance region exists between V_P and V_V",
+        "b": "Avalanche breakdown dominates at V_V",
+        "c": "The diode acts purely as a resistor",
+        "d": "The diode cannot operate in high-speed regions"
+      },
+      "explanations": {
+        "a": "Correct. A V_P lower than V_V indicates a clear negative-resistance region, enabling high-speed switching.",
+        "b": "Incorrect. Avalanche breakdown doesn't occur in Esaki diodes.",
+        "c": "Incorrect. The nonlinear I-V characteristic shows it's not just a resistor.",
+        "d": "Incorrect. Negative resistance supports ultrafast switching."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. After simulation, if IMPATT diode oscillations are observed at 95 GHz, what determines this oscillation frequency?",
+      "answers": {
+        "a": "Carrier recombination rate",
+        "b": "Transit time across the drift region",
+        "c": "Tunnel barrier thickness",
+        "d": "Doping ratio in the Esaki diode"
+      },
+      "explanations": {
+        "a": "Incorrect. Recombination is too slow to set GHz frequencies.",
+        "b": "Correct. For IMPATT diodes, f_osc ≈ 1 / τ_transit, determined by drift region length and carrier speed.",
+        "c": "Incorrect. Barrier thickness affects tunnel diodes, not IMPATT oscillations.",
+        "d": "Incorrect. Esaki diode doping has no role in IMPATT operation."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. If the barrier width W is reduced from 12 nm to 8 nm in a tunnel diode, the tunneling current will:",
+      "answers": {
+        "a": "Decrease exponentially",
+        "b": "Increase exponentially",
+        "c": "Remain unchanged",
+        "d": "Oscillate periodically"
+      },
+      "explanations": {
+        "a": "Incorrect. Thinner barriers allow higher tunneling probabilities.",
+        "b": "Correct. Transmission probability T ≈ exp(-2κW), so reducing W greatly boosts current.",
+        "c": "Incorrect. Barrier width has a significant effect.",
+        "d": "Incorrect. There is no periodic oscillation dependence."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "5. In simulations, the IMPATT diode shows an output power of 200 mW. Which parameter primarily influences this power?",
+      "answers": {
+        "a": "Avalanche multiplication factor and bias voltage",
+        "b": "Peak-to-valley ratio of the tunnel diode",
+        "c": "Tunneling probability",
+        "d": "Carrier recombination coefficient"
+      },
+      "explanations": {
+        "a": "Correct. IMPATT power is mainly set by the avalanche process and applied bias voltage.",
+        "b": "Incorrect. PVCR relates to tunnel diodes, not IMPATT output power.",
+        "c": "Incorrect. Tunneling doesn't dominate IMPATT diode physics.",
+        "d": "Incorrect. Recombination plays a negligible role."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "6. For a semiconductor slab of length L, the drift transit time τ_dd can be expressed as:",
+      "answers": {
+        "a": "τ_dd = L / (μE)",
+        "b": "τ_dd = μE / L",
+        "c": "τ_dd = L² / μ",
+        "d": "τ_dd = 1 / (μE)"
+      },
+      "explanations": {
+        "a": "Correct. Drift velocity v = μE, and transit time τ_dd = L / v = L / (μE).",
+        "b": "Incorrect. This expression flips the formula.",
+        "c": "Incorrect. There's no squared dependence here.",
+        "d": "Incorrect. Inverse form doesn't match physics."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "7. During simulation, if PVCR = 10 is observed for a tunnel diode, what does it imply about device performance?",
+      "answers": {
+        "a": "It will have poor high-speed switching capability",
+        "b": "It will exhibit strong negative-resistance behavior",
+        "c": "It cannot conduct significant current",
+        "d": "It cannot sustain oscillations"
+      },
+      "explanations": {
+        "a": "Incorrect. Higher PVCR improves switching performance.",
+        "b": "Correct. A high PVCR means a sharp negative-resistance slope, ideal for fast oscillators.",
+        "c": "Incorrect. High PVCR does not imply low current.",
+        "d": "Incorrect. High PVCR supports oscillations."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "8. When simulating IMPATT diodes, a sudden phase delay between voltage and current indicates:",
+      "answers": {
+        "a": "Space-charge build-up in the drift region",
+        "b": "Breakdown of quantum tunneling",
+        "c": "Complete recombination of carriers",
+        "d": "Transition into thermal runaway"
+      },
+      "explanations": {
+        "a": "Correct. The phase shift comes from carrier transit delays, leading to space-charge oscillations.",
+        "b": "Incorrect. Tunneling is unrelated to IMPATT oscillations.",
+        "c": "Incorrect. Carrier recombination is negligible in this timescale.",
+        "d": "Incorrect. Thermal runaway isn't involved here."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "9. In high-frequency measurements, if a tunnel diode exhibits τ_tun ≈ 0.2 ps, what is its approximate cut-off frequency?",
+      "answers": {
+        "a": "5 GHz",
+        "b": "50 GHz",
+        "c": "500 GHz",
+        "d": "5 THz"
+      },
+      "explanations": {
+        "a": "Incorrect. That corresponds to much slower devices.",
+        "b": "Incorrect. 50 GHz is still too low for 0.2 ps transit time.",
+        "c": "Correct. f_c ≈ 1 / (2πτ_tun) ≈ 500 GHz, well into sub-THz range.",
+        "d": "Incorrect. 5 THz is too high."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
+    }
+  ]
+}
