@@ -1,5 +1,7 @@
 ## Procedure
 
+⭐ When you enter the simulation section, a guided tour will appear. It is strongly recommended that you take the tour, as it provides step-by-step instructions to help you understand the experiment thoroughly. The tour also introduces you to the various controls, features, and interface elements, making it easier for you to navigate and explore the experiment effectively.
+
 ### Task-1: Quantum Tunneling Barrier Analysis and Energy Band Identification
 
 In the first task, the user is presented with quantum tunneling visualizations showing energy band diagrams under different bias conditions. The simulation displays:
