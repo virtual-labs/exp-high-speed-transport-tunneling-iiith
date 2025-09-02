@@ -1,10 +1,4 @@
 
-# **High-Speed Devices: Drift/Diffusion, Tunnel Diodes, and IMPATT Diodes**
-
----
-
-## **Introduction**
-
 High-speed semiconductor devices operate on **time scales** where
 **carrier transit dynamics** become the primary limiting factor. Two
 broad mechanisms dominate:
@@ -20,8 +14,7 @@ exploit tunneling to achieve **negative differential resistance**, while
 **IMPATT diodes** use **avalanche multiplication** combined with
 **drift-region delay** to generate **microwave oscillations**.
 
-> **[Insert schematic diagram comparing drift/diffusion region,
-tunneling barrier, and IMPATT diode structure here]**
+<p><img src="images/impatt.png" ></p> 
 
 ---
 
@@ -41,7 +34,7 @@ The **mean drift transit time** is then:
 
 $$ \tau_{dd} = \frac{L}{v_d} \tag{3} $$
 
-> **[Insert graph of $v_d$ vs. $E$ showing linear region and velocity saturation]**
+<p><img src="images/vd.png" ></p> 
 
 ---
 
@@ -65,7 +58,7 @@ $$ \tau_{tun} \approx \dfrac{\hbar}{\Delta E} \tag{5} $$
 where **ΔE** is the **energy uncertainty** associated with the tunneling
 process.
 
-> **[Insert energy band diagram of tunneling barrier with incident and transmitted wavefunctions]**
+<p><img src="images/quan.png" ></p> 
 
 ---
 
@@ -89,8 +82,9 @@ $$ PVCR = \dfrac{I_P}{I_V} \tag{6} $$
 
 where **$I_P$** is the **peak current** and **$I_V$** the **valley current**.
 
-> **[Insert I--V characteristic of tunnel diode with $V_P$, $V_V$, and negative-resistance region highlighted]**  
-> **[Insert band diagrams for $V < V_P$, $V = V_P$, and $V > V_V$ showing overlap changes]**
+<p><img src="images/tundiode.png" ></p> 
+<p><img src="images/tunfow.png" ></p> 
+<p><img src="images/tunrev.png" ></p> 
 
 ---
 
@@ -120,8 +114,8 @@ $$ P_{out} \approx \dfrac{1}{2} \, V_{RF} I_{RF} \, \eta_c \tag{9} $$
 
 where **$\eta_c$** is the **circuit efficiency**.
 
-> **[Insert schematic of avalanche and drift regions with field profile and carrier motion over one RF cycle]**  
-> **[Insert graph of RF voltage and current waveforms showing phase shift due to transit time]**
+<p><img src="images/avlanche.png" ></p>  
+<p><img src="images/avlancherf.png" ></p> 
 
 ---
 
@@ -141,10 +135,4 @@ These relationships form the **theoretical basis** for analyzing:
 -   **Negative-resistance switching**
 -   **Microwave generation** in **advanced semiconductor devices**.
 
----
 
-## **Suggested References**
-
-1.  **B. G. Streetman** and **S. Banerjee**, *Solid State Electronic Devices*
-2.  **S. M. Sze** and **K. K. Ng**, *Physics of Semiconductor Devices*
-3.  **T. Gonzalez** and **J. Mateos**, *High-Speed Semiconductor Devices*
