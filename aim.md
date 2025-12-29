@@ -1,0 +1,1 @@
+To simulate and analyze high-speed carrier transport mechanisms in semiconductors by comparing drift/diffusion and quantum tunneling regimes, study the negative-resistance behavior of tunnel diodes, and investigate avalanche transit-time effects in IMPATT diodes for understanding ultrafast switching, microwave generation, and high-frequency device performance.

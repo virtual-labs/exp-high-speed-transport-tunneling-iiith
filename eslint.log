@@ -1,0 +1,12 @@
+
+/home/runner/work/exp-high-speed-transport-tunneling-iiith/exp-high-speed-transport-tunneling-iiith/experiment/simulation/challenge-script.js
+  578:11  warning  'challengeContent' is assigned a value but never used     no-unused-vars
+  901:10  warning  'initializeChallengesIfNeeded' is defined but never used  no-unused-vars
+
+/home/runner/work/exp-high-speed-transport-tunneling-iiith/exp-high-speed-transport-tunneling-iiith/experiment/simulation/mobile-detection.js
+  283:7   warning  'mobileDetection' is assigned a value but never used  no-unused-vars
+  286:38  warning  'module' is not defined                               no-undef
+  287:3   warning  'module' is not defined                               no-undef
+
+✖ 5 problems (0 errors, 5 warnings)
+
